@@ -38,6 +38,7 @@ y mejorar la experiencia del cliente mediante **IA explicable y escalable**.
 ### 🌐 Interfaz Web
 - Interfaz funcional desarrollada con **Gradio**
 - Acceso vía navegador para pruebas y demostraciones
+<img width="1737" height="557" alt="image" src="https://github.com/user-attachments/assets/54d6ef54-8fa2-43e2-a356-f3275f37afa3" />
 
 ---
 
