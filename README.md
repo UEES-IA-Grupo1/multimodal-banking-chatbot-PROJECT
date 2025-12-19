@@ -82,3 +82,4 @@ El sistema incluye un módulo de evaluación automática que genera reportes de:
 
 - **CSAT (Customer Satisfaction Score)**  
 
+<img width="1460" height="637" alt="image" src="https://github.com/user-attachments/assets/17249dc3-6372-4f27-a429-7ac637d7c70c" />
