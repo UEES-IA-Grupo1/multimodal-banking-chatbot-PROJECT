@@ -1,139 +1,83 @@
-🤖 Chatbot Conversacional Multimodal para Servicio al Cliente (Banca Digital)
+# 🤖 Chatbot Conversacional Multimodal para Servicio al Cliente (Banca Digital)
 
-Este proyecto implementa un asistente inteligente de atención al cliente para banca digital, capaz de procesar consultas por texto e imagen, integrando NLP avanzado, visión artificial y grafos de conocimiento para soportar decisiones operativas en tiempo real.
+Este proyecto implementa un **asistente inteligente para banca digital**, capaz de procesar
+consultas bancarias a través de **texto e imagen**, integrando arquitecturas de vanguardia en
+**Procesamiento de Lenguaje Natural (NLP)** y **Visión Artificial (CV)**.
 
-El objetivo es automatizar interacciones bancarias complejas, reducir fricción operativa y mejorar la experiencia del cliente mediante IA explicable y escalable.
+El objetivo es **automatizar interacciones bancarias complejas**, reducir fricción operativa
+y mejorar la experiencia del cliente mediante **IA explicable y escalable**.
 
-🚀 Funcionalidades Clave
-🧠 NLU Avanzado
+---
 
-Clasificación de intenciones (Intent Recognition)
+## 🚀 Características Principales
 
-Extracción de entidades (NER): nombres, montos, cuentas
+### 🧠 NLU Avanzado
+- Reconocimiento de intenciones (Intent Recognition)
+- Extracción de entidades (NER): nombres, montos y cuentas
+- Modelos basados en **BERT / DistilBERT** (Hugging Face)
 
-Modelos basados en BERT / DistilBERT (Hugging Face)
+### 💬 Gestión de Diálogo con Memoria
+- Capacidad para mantener el contexto conversacional
+- Recolección automática de información faltante (Slot Filling)
+- Conversaciones coherentes y orientadas a objetivo
 
-💬 Gestión de Diálogo con Memoria
+### 🖼️ Procesamiento Multimodal
+- Fusión de información proveniente de **texto + imágenes**
+- Análisis de documentos bancarios (cheques e identificaciones)
 
-Dialogue Manager con estado de sesión
+### 🔍 Visión Artificial (OCR)
+- Extracción de texto de documentos bancarios
+- Implementación mediante **EasyOCR**
+- Soporte para archivos como `SAMPLE_CHEQUE.avif`
 
-Slot Filling automático para recolectar información faltante
+### 🕸️ Knowledge Graph
+- Validación de reglas de negocio
+- Verificación de existencia y estatus de clientes
+- Implementación con grafos de conocimiento estructurados
 
-Conversaciones coherentes y orientadas a objetivo
+### 🌐 Interfaz Web
+- Interfaz funcional desarrollada con **Gradio**
+- Acceso vía navegador para pruebas y demostraciones
 
-🖼️ Procesamiento Multimodal
+---
 
-Integración de texto + imagen
+## 🛠️ Stack Tecnológico
 
-Análisis de documentos bancarios (cheques, identificaciones)
+- **Lenguaje:** Python 3.12  
+- **NLP:** Hugging Face Transformers (BERT, DistilBERT)  
+- **Visión:** EasyOCR, OpenCV, PIL  
+- **Grafos:** NetworkX  
+- **Interfaz:** Gradio  
+- **Entorno:** Google Colab  
 
-🔍 Visión Artificial (OCR)
+---
 
-Extracción de texto mediante EasyOCR
+## 📋 Arquitectura del Proyecto
 
-Preprocesamiento con OpenCV y PIL
+### 1️⃣ Módulo NLU
+- Clasifica la intención del usuario
+- Extrae entidades clave como nombres, montos y números de cuenta
 
-Soporte para archivos como SAMPLE_CHEQUE.avif
+### 2️⃣ Módulo de Diálogo
+- Implementa un `DialogueManager`
+- Utiliza memoria de sesión para guiar al usuario hasta completar la transacción
 
-🕸️ Knowledge Graph
+### 3️⃣ Módulo de Visión
+- Detecta y lee texto en documentos bancarios
+- Preprocesamiento de imágenes para OCR
 
-Validación de reglas de negocio
+### 4️⃣ Módulo de Conocimiento
+- Cruza la información extraída con un **Grafo de Conocimiento**
+- Valida límites de crédito y estatus del cliente
 
-Verificación de clientes, estatus y límites
+---
 
-Implementación con NetworkX
+## 📊 Métricas de Evaluación
 
-🌐 Interfaz Web
+El sistema incluye un módulo de evaluación automática que genera reportes de:
 
-Interfaz funcional construida con Gradio
+- **Accuracy**  
+  Precisión del modelo en la detección de intenciones
 
-Uso interactivo en navegador (ideal para demos y MVP)
-
-🛠️ Stack Tecnológico
-Componente	Tecnología
-Lenguaje	Python 3.12
-NLP	Hugging Face Transformers (BERT, DistilBERT)
-Visión	EasyOCR, OpenCV, PIL
-Grafos	NetworkX
-Interfaz	Gradio
-Entorno	Google Colab
-🧩 Arquitectura del Sistema
-1️⃣ Módulo NLU
-
-Clasifica la intención del usuario
-
-Extrae entidades clave (NER)
-
-Base para el flujo de decisión
-
-2️⃣ Módulo de Diálogo
-
-Gestión de contexto por sesión
-
-Control del flujo conversacional
-
-Validación de datos antes de ejecutar acciones
-
-3️⃣ Módulo de Visión
-
-Lectura automática de documentos bancarios
-
-OCR optimizado para imágenes reales
-
-4️⃣ Módulo de Conocimiento
-
-Grafo de clientes y reglas de negocio
-
-Validación de:
-
-Existencia del cliente
-
-Estatus
-
-Límites y restricciones
-
-📊 Métricas de Evaluación
-
-El sistema incluye evaluación automática orientada a negocio:
-
-Accuracy
-Precisión en la detección de intenciones
-
-CSAT (Customer Satisfaction Score)
-Simulación de satisfacción del cliente basada en la interacción
-
-Tiempo de Respuesta (ms)
-Medición de performance del sistema
-
-▶️ Ejecución del Proyecto
-
-Abrir el notebook en Google Colab
-
-Instalar dependencias
-
-Ejecutar las celdas en orden
-
-Acceder a la interfaz Gradio generada
-
-El proyecto está diseñado como MVP funcional, fácilmente extensible a producción.
-
-📌 Casos de Uso
-
-Atención al cliente en banca digital
-
-Validación automática de cheques/documentos
-
-Asistentes virtuales financieros
-
-Prototipos de IA conversacional multimodal
-
-📈 Roadmap (Mejoras Futuras)
-
-Integración con APIs bancarias reales
-
-Persistencia de sesiones en base de datos
-
-Modelos multimodales end-to-end
-
-Despliegue en cloud (AWS / GCP / Azure)
+- **CSAT (Customer Satisfaction Score)**  
 
