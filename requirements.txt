@@ -1,0 +1,10 @@
+transformers[torch]
+datasets
+evaluate
+easyocr
+gradio
+networkx
+pandas
+matplotlib
+seaborn
+scikit-learn
