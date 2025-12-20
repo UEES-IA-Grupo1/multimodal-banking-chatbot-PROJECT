@@ -1,5 +1,5 @@
-Cliente: Quiero bloquear mi tarjeta de credito
-Cliente: Cual es el saldo de mi cuenta de ahorros
-Cliente: Necesito transferir dinero a un amigo
-Cliente: Mi tarjeta se perdio en el cajero
-Cliente: Ver movimientos de mi cuenta corriente
+Cliente: Quiero bloquear mi tarjeta de credito.
+Cliente: Cual es el saldo de mi cuenta de ahorros.
+Cliente: Necesito transferir dinero a un amigo.
+Cliente: Mi tarjeta se perdio en el cajero.
+Cliente: Ver movimientos de mi cuenta corriente.
