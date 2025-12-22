@@ -71,7 +71,7 @@ y mejorar la experiencia del cliente mediante **IA explicable y escalable**.
 - Cruza la información extraída con un **Grafo de Conocimiento**
 - Valida límites de crédito y estatus del cliente
 
----
+--
 
 ## 📊 Métricas de Evaluación
 
